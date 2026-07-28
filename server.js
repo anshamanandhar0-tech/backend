@@ -1,8 +1,9 @@
 import express from "express"
-import { handleDelete, handlePost, handlePut } from "./handlers/todo_handler.js"
-import todoRouter from "./routes/todorouter.js"
+import { handleDelete, handlePost, handlePut } from "./handlers/todohandeler.js"
+import todoRouter from "./routes/todoroutes.js"
 import bookRouter from "./routes/bookroutes.js"
-import { loggerMiddlerware, xHeader } from "./middleware/my_middleware.js"
+import { loggerMiddlerware, xHeader } from "./handlers/middleware/middleware.js"
+
 
 // express object
 let myServer = express()

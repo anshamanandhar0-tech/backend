@@ -1,6 +1,7 @@
 import { Router } from "express";
-import { CreateBook, DeleteBook, filterbook, GetAllBooks, GetBookId, UpdateBook } from "../handlers/book_handler.js";
-import { loggerMiddlerware, xHeader } from "../middleware/my_middleware.js";
+import { CreateBook, DeleteBook, filterbook, GetAllBooks, GetBookId, UpdateBook } from "../handlers/book_handeler.js";
+import { xHeader } from "../handlers/middleware/middleware.js";
+// import { loggerMiddlerware, xHeader } from "../middleware/middleware.js";
 
 let bookRouter=Router()
 bookRouter.get(
